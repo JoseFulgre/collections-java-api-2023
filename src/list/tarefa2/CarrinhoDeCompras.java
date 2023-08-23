@@ -23,7 +23,7 @@ public class CarrinhoDeCompras {
     public String calcularValorTotal(){
         double total = 0.0;
         for(Item item : lista){
-            total += item.PRECO;
+            total += item.PRECO * item.QUANTIDADE;
         }
         return "Valor total no carrinho: R$" + total + "\n";
     }
